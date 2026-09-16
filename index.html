@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inverno D'Italia Alfenas | Cafeteria, doces da casa e encomendas</title>
+<meta name="description" content="Café especial, doces da casa, lanches e cestas de café para presentear no centro de Alfenas. Nota 5,0 no Google com mais de 300 avaliações. Peça pelo WhatsApp.">
+<meta property="og:title" content="Inverno D'Italia Alfenas — Aqui o seu dia fica mais leve">
+<meta property="og:description" content="Café especial, doces da casa e um cantinho pra relaxar no centro de Alfenas. Encomendas pelo WhatsApp.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#3b2a22">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Inverno D' Italia Alfenas",
+  "telephone": "+55 35 99927-1921",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Pres. Artur Bernardes, 622 - Centro",
+    "addressLocality": "Alfenas",
+    "addressRegion": "MG",
+    "postalCode": "37130-093",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:30", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "17:30"}
+  ],
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "303"},
+  "sameAs": ["https://www.instagram.com/invernoditaliaalfenas/"]
+}
+</script>
+
+<style>
+  :root{
+    --espresso:#2e211b;
+    --espresso-2:#3b2a22;
+    --cream:#fbf6ee;
+    --cream-2:#f3eadb;
+    --paper:#ffffff;
+    --terracotta:#b8552f;
+    --terracotta-dark:#96421f;
+    --olive:#5e6b3a;
+    --gold:#d9a441;
+    --ink:#2b211c;
+    --muted:#6f625a;
+    --line:#e6dccb;
+    --whats:#1fa855;
+    --whats-dark:#178a45;
+    --radius:18px;
+    --shadow:0 18px 40px -18px rgba(46,33,27,.35);
+    --max:1140px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img,svg{display:block;max-width:100%}
+  a{color:inherit}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.12;letter-spacing:-.01em;color:var(--espresso)}
+  .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+  section{padding:88px 0;scroll-margin-top:60px}
+  .eyebrow{display:inline-block;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--terracotta);margin-bottom:14px}
+  .section-title{font-size:clamp(1.9rem,4vw,2.7rem);margin-bottom:14px}
+  .section-lead{color:var(--muted);font-size:1.08rem;max-width:620px}
+  .center{text-align:center}
+  .center .section-lead{margin:0 auto}
+
+  /* Botões */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 26px;border-radius:999px;font-weight:600;font-size:1rem;text-decoration:none;transition:transform .15s ease, background .2s ease, box-shadow .2s ease;border:2px solid transparent;cursor:pointer}
+  .btn:hover{transform:translateY(-2px)}
+  .btn svg{width:22px;height:22px;flex:none}
+  .btn-whats{background:var(--whats);color:#fff;box-shadow:0 12px 26px -12px rgba(31,168,85,.7)}
+  .btn-whats:hover{background:var(--whats-dark)}
+  .btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+  .btn-outline{border-color:var(--espresso);color:var(--espresso)}
+  .btn-outline:hover{background:var(--espresso);color:#fff}
+
+  /* Topo */
+  .topbar{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .25s ease, box-shadow .25s ease}
+  .topbar.scrolled{background:rgba(46,33,27,.94);backdrop-filter:blur(8px);box-shadow:0 6px 20px -10px rgba(0,0,0,.4)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+  .brand{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:600;color:#fff;text-decoration:none;white-space:nowrap}
+  .brand em{color:var(--gold);font-style:italic}
+  .brand{display:flex;align-items:center;align-self:flex-start;margin-top:8px;margin-left:130px;transition:margin .25s ease}
+  @media (max-width:1180px){.brand{margin-left:60px}}
+  @media (max-width:860px){.brand{margin-left:12px}}
+  .brand-logo{height:100px;width:100px;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,.35));transition:width .25s ease,height .25s ease}
+  .brand-logo + span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .topbar.scrolled .brand{margin-top:7px}
+  .topbar.scrolled .brand-logo{height:56px;width:56px}
+  section.hero{padding-top:150px}
+  .footer-brand{display:flex;align-items:center;gap:14px}
+  .footer-brand img{width:56px;height:56px;flex:none}
+  .nav{display:flex;gap:28px;align-items:center}
+  .nav a{color:rgba(255,255,255,.85);text-decoration:none;font-size:.95rem;font-weight:500}
+  .nav a:hover{color:#fff}
+  .nav .btn{padding:10px 18px;font-size:.9rem}
+  @media (max-width:860px){.nav a:not(.btn){display:none}}
+  @media (max-width:420px){.nav .btn span{display:none}.nav .btn{padding:10px 12px}}
+
+  /* Hero */
+  .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:120px 0 80px;color:#fff;background:
+      radial-gradient(1200px 600px at 85% 20%, rgba(217,164,65,.22), transparent 60%),
+      radial-gradient(900px 500px at 10% 90%, rgba(184,85,47,.28), transparent 60%),
+      linear-gradient(160deg,#2a1d17 0%,#3b2a22 55%,#4a3226 100%);overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+  .hero h1{color:#fff;font-size:clamp(2.4rem,6vw,4.2rem);font-weight:600;margin-bottom:20px}
+  .hero h1 em{color:var(--gold);font-weight:400}
+  .hero p.lead{font-size:clamp(1.05rem,2vw,1.22rem);color:rgba(255,255,255,.85);max-width:540px;margin-bottom:32px}
+  .rating-pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:8px 16px 8px 10px;border-radius:999px;font-size:.9rem;margin-bottom:26px}
+  .rating-pill .g{width:26px;height:26px;border-radius:50%;background:#fff;display:grid;place-items:center;font-weight:700;color:#4285f4;font-size:.95rem}
+  .stars{color:var(--gold);letter-spacing:2px}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:22px;margin-top:34px;font-size:.92rem;color:rgba(255,255,255,.75)}
+  .hero-meta span{display:flex;align-items:center;gap:8px}
+  .hero-meta svg{width:18px;height:18px;color:var(--gold)}
+
+  .hero-art{position:relative;aspect-ratio:1/1;max-width:480px;margin-left:auto;width:100%}
+  .hero-art .plate{position:absolute;inset:6%;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fffaf1,#efe2cc 70%);box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+  .hero-art svg.cup{position:absolute;inset:14%;width:72%;height:72%}
+  .steam path{stroke:rgba(255,255,255,.55);stroke-width:3;fill:none;stroke-linecap:round;animation:steam 3.6s ease-in-out infinite}
+  .steam path:nth-child(2){animation-delay:.8s}
+  .steam path:nth-child(3){animation-delay:1.6s}
+  @keyframes steam{0%{opacity:0;transform:translateY(10px)}40%{opacity:1}100%{opacity:0;transform:translateY(-22px)}}
+  .float-card{position:absolute;z-index:3;background:#fff;color:var(--ink);border-radius:14px;padding:12px 16px;box-shadow:var(--shadow);font-size:.85rem;display:flex;align-items:center;gap:10px}
+  .float-card b{display:block;font-size:.95rem}
+  .float-card .ic{font-size:1.5rem}
+  .fc-1{top:6%;left:-4%}
+  .fc-2{bottom:8%;right:-2%}
+  @media (max-width:900px){
+    .hero-grid{grid-template-columns:1fr;gap:40px}
+    .hero-art{max-width:340px;margin:0 auto}
+    .fc-1{left:0}.fc-2{right:0}
+  }
+
+  /* Faixa de prova */
+  .proof{background:var(--espresso);color:#fff;padding:26px 0}
+  .proof .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+  .proof b{font-family:'Fraunces',serif;font-size:1.9rem;color:var(--gold);display:block;line-height:1.1}
+  .proof span{font-size:.85rem;color:rgba(255,255,255,.75)}
+  @media (max-width:720px){.proof .wrap{grid-template-columns:repeat(2,1fr);row-gap:24px}}
+
+  /* Cardápio / destaques */
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:48px}
+  .card{background:var(--paper);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);transition:transform .2s ease, box-shadow .2s ease;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .card .thumb{aspect-ratio:4/3;display:grid;place-items:center;font-size:3.6rem;position:relative}
+  .card .thumb small{position:absolute;bottom:8px;right:10px;font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(46,33,27,.45);font-family:'Inter',sans-serif}
+  .t1{background:linear-gradient(135deg,#e9d6bb,#c99b6d)}
+  .t2{background:linear-gradient(135deg,#f6dccf,#d98b6a)}
+  .t3{background:linear-gradient(135deg,#e5e7cf,#a9b37a)}
+  .t4{background:linear-gradient(135deg,#dbe8ef,#9fbfd2)}
+  .card-body{padding:20px 20px 24px;flex:1;display:flex;flex-direction:column}
+  .card h3{font-size:1.28rem;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:.95rem;flex:1}
+  .card a{margin-top:14px;font-weight:600;color:var(--terracotta);text-decoration:none;font-size:.92rem}
+  .card a:hover{text-decoration:underline}
+  @media (max-width:980px){.cards{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:520px){.cards{grid-template-columns:1fr}}
+
+  /* Encomendas */
+  .orders{background:var(--cream-2)}
+  .orders-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .orders-visual{position:relative;border-radius:24px;aspect-ratio:5/4;background:
+     radial-gradient(circle at 30% 35%,rgba(255,255,255,.35),transparent 45%),
+     linear-gradient(145deg,#b8552f,#7c3a1f);display:grid;place-items:center;box-shadow:var(--shadow);overflow:hidden}
+  .orders-visual .basket{font-size:7rem;filter:drop-shadow(0 12px 18px rgba(0,0,0,.3))}
+  .orders-visual .tag{position:absolute;z-index:3;top:22px;left:22px;background:var(--gold);color:var(--espresso);font-weight:700;font-size:.8rem;padding:8px 14px;border-radius:999px;letter-spacing:.04em;text-transform:uppercase}
+  .occasions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:28px 0 32px}
+  .occasions li{list-style:none;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px;font-weight:500;font-size:.95rem}
+  .occasions li span{font-size:1.3rem}
+  .note{font-size:.88rem;color:var(--muted);margin-top:14px}
+  @media (max-width:900px){.orders-grid{grid-template-columns:1fr;gap:36px}}
+  @media (max-width:420px){.occasions{grid-template-columns:1fr}}
+
+  /* Como pedir */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;counter-reset:s}
+  .step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;position:relative}
+  .step::before{counter-increment:s;content:counter(s);position:absolute;top:-18px;left:26px;width:40px;height:40px;border-radius:50%;background:var(--terracotta);color:#fff;font-weight:700;display:grid;place-items:center;font-family:'Fraunces',serif;font-size:1.2rem}
+  .step h3{font-size:1.2rem;margin:10px 0 6px}
+  .step p{color:var(--muted);font-size:.95rem}
+  @media (max-width:780px){.steps{grid-template-columns:1fr;gap:34px}}
+
+  /* Ambiente */
+  .ambience-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+  .features{display:grid;gap:18px;margin-top:30px}
+  .feature{display:flex;gap:16px;align-items:flex-start}
+  .feature .ic{flex:none;width:48px;height:48px;border-radius:14px;background:var(--cream-2);display:grid;place-items:center;font-size:1.4rem}
+  .feature h3{font-family:'Inter',sans-serif;font-size:1.02rem;font-weight:600;margin-bottom:2px}
+  .feature p{color:var(--muted);font-size:.94rem}
+  .mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:180px 180px;gap:14px}
+  .mosaic div{overflow:hidden;border-radius:18px;display:grid;place-items:center;font-size:3rem;position:relative}
+  .mosaic div:first-child{grid-row:span 2}
+  .mosaic small{position:absolute;bottom:8px;left:10px;font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(46,33,27,.5)}
+  @media (max-width:900px){.ambience-grid{grid-template-columns:1fr;gap:36px}.mosaic{grid-template-rows:140px 140px}}
+
+  /* Depoimentos */
+  .reviews{background:var(--espresso);color:#fff}
+  .reviews .section-title{color:#fff}
+  .reviews .section-lead{color:rgba(255,255,255,.72)}
+  .reviews-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+  .score{display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:16px 22px}
+  .score b{font-family:'Fraunces',serif;font-size:2.8rem;color:var(--gold);line-height:1}
+  .score small{display:block;color:rgba(255,255,255,.7);font-size:.85rem}
+  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .quote{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:28px 26px;display:flex;flex-direction:column}
+  .quote p{font-family:'Fraunces',serif;font-style:italic;font-size:1.12rem;line-height:1.5;flex:1;margin:12px 0 18px;color:rgba(255,255,255,.92)}
+  .quote cite{font-style:normal;font-size:.85rem;color:rgba(255,255,255,.6)}
+  .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+  .tags span{border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:6px 14px;font-size:.85rem;color:rgba(255,255,255,.8)}
+  @media (max-width:900px){.quotes{grid-template-columns:1fr}}
+
+  /* Visite */
+  .visit-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:stretch}
+  .info{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px}
+  .info h3{font-size:1.5rem;margin-bottom:22px}
+  .info-row{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+  .info-row:last-of-type{border-bottom:0}
+  .info-row svg{width:22px;height:22px;flex:none;color:var(--terracotta);margin-top:2px}
+  .info-row b{display:block;font-size:.95rem}
+  .info-row span,.info-row a{color:var(--muted);font-size:.95rem;text-decoration:none}
+  .hours{width:100%;border-collapse:collapse;font-size:.95rem;color:var(--muted)}
+  .hours td{padding:2px 0}
+  .hours td:last-child{text-align:right;color:var(--ink);font-weight:500}
+  .open-status{display:inline-block;margin-top:6px;font-size:.8rem;font-weight:600;padding:3px 10px;border-radius:999px}
+  .open-status.on{background:#e3f5ea;color:#17803f}
+  .open-status.off{background:#fbe9e3;color:var(--terracotta-dark)}
+  .info .btn{width:100%;margin-top:22px}
+  .map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);min-height:380px}
+  .map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+  @media (max-width:900px){.visit-grid{grid-template-columns:1fr}}
+
+  /* FAQ */
+  .faq{background:var(--cream-2)}
+  .faq-list{max-width:760px;margin:40px auto 0}
+  details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}
+  summary{cursor:pointer;list-style:none;padding:20px 24px;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:'+';font-size:1.5rem;color:var(--terracotta);transition:transform .2s ease;flex:none}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{padding:0 24px 20px;color:var(--muted)}
+
+  /* CTA final */
+  .final{background:
+    radial-gradient(700px 400px at 80% 0%, rgba(217,164,65,.25), transparent 60%),
+    linear-gradient(150deg,#b8552f,#7c3a1f);color:#fff;text-align:center}
+  .final h2{color:#fff;font-size:clamp(2rem,5vw,3.2rem);margin-bottom:16px}
+  .final p{color:rgba(255,255,255,.88);max-width:560px;margin:0 auto 32px;font-size:1.1rem}
+  .final .btn-whats{font-size:1.08rem;padding:18px 32px}
+
+  footer{background:#1f1612;color:rgba(255,255,255,.6);padding:40px 0 110px;font-size:.88rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+  footer a{color:rgba(255,255,255,.85);text-decoration:none}
+  footer a:hover{color:#fff}
+  @media (min-width:761px){footer{padding-bottom:40px}}
+
+  /* Botão flutuante */
+  .float-whats{position:fixed;right:18px;bottom:18px;z-index:60;width:62px;height:62px;border-radius:50%;background:var(--whats);color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.45);text-decoration:none;animation:pulse 2.6s infinite}
+  .float-whats svg{width:32px;height:32px}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(31,168,85,.55)}70%{box-shadow:0 0 0 16px rgba(31,168,85,0)}100%{box-shadow:0 0 0 0 rgba(31,168,85,0)}}
+  .mobile-bar{display:none}
+  @media (max-width:760px){
+    .float-whats{display:none}
+    .mobile-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px;box-shadow:0 -8px 24px -12px rgba(0,0,0,.25)}
+    .mobile-bar .btn{flex:1;padding:14px 10px;font-size:.95rem}
+    .mobile-bar .btn-outline{flex:0 0 auto}
+  }
+
+  .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}
+  .hero-photo{position:absolute;inset:6%;width:88%;height:88%;border-radius:50%;object-fit:cover;z-index:2;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .reveal{opacity:1;transform:none;transition:none}
+    .steam path,.float-whats{animation:none}
+  }
+  :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<!-- Ícones reutilizáveis -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-whats" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.24-9.44 9.45-9.44a9.4 9.4 0 0 1 6.68 2.77 9.38 9.38 0 0 1 2.76 6.68c0 5.2-4.24 9.43-9.45 9.43m8.04-17.47A11.3 11.3 0 0 0 12.05.7C5.78.7.67 5.8.67 12.07c0 2 .52 3.96 1.52 5.69L.57 23.7l6.08-1.6a11.36 11.36 0 0 0 5.4 1.38h.01c6.27 0 11.38-5.1 11.38-11.37 0-3.04-1.18-5.9-3.34-8.05"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 1 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.8 5.7 21.4l1.5-7.1L1.8 9.4 9 8.6Z"/></symbol>
+</svg>
+
+<header class="topbar" id="topbar">
+  <div class="wrap">
+    <a href="#inicio" class="brand" aria-label="Inverno D'Italia – início">
+      <img class="brand-logo" src="logo.png" alt="" onerror="this.remove()">
+      <span>Inverno <em>D'Italia</em></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#cardapio">O que servimos</a>
+      <a href="#encomendas">Encomendas</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#visite">Como chegar</a>
+      <a class="btn btn-whats js-whats" data-msg="geral" href="#"><svg><use href="#i-whats"/></svg><span>Chamar no WhatsApp</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <a class="rating-pill" href="#avaliacoes" style="text-decoration:none;color:inherit">
+        <span class="g">G</span>
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span><b>5,0</b> · 303 avaliações no Google</span>
+      </a>
+      <h1>Aqui o seu dia fica <em>mais leve.</em></h1>
+      <p class="lead">Café especial, doces feitos na casa e um cantinho aconchegante no centro de Alfenas. Venha tomar um café ou encomende uma cesta para surpreender alguém.</p>
+      <div class="hero-cta">
+        <a class="btn btn-whats js-whats" data-msg="encomenda" href="#"><svg><use href="#i-whats"/></svg>Fazer minha encomenda</a>
+        <a class="btn btn-ghost" href="#visite">Como chegar</a>
+      </div>
+      <div class="hero-meta">
+        <span><svg><use href="#i-clock"/></svg><span id="hero-status">Seg a sex 7h30–18h · Sáb 8h–17h30</span></span>
+        <span><svg><use href="#i-pin"/></svg>R. Pres. Artur Bernardes, 622 · Centro</span>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <div class="plate"></div>
+      <img class="hero-photo" src="fotos/cafe-topo.png" alt="" onerror="if(!this.dataset.t){this.dataset.t=1;this.src=this.src.replace(/.jpg$/,'.png')}else{this.remove()}">
+      <svg class="cup" viewBox="0 0 200 200">
+        <g class="steam">
+          <path d="M82 58c-6-10 6-16 0-28"/>
+          <path d="M100 56c-6-10 6-16 0-28"/>
+          <path d="M118 58c-6-10 6-16 0-28"/>
+        </g>
+        <ellipse cx="100" cy="150" rx="70" ry="16" fill="#e2d2b8"/>
+        <ellipse cx="100" cy="146" rx="56" ry="11" fill="#d4c0a0"/>
+        <path d="M150 92c20 0 24 26 4 32" stroke="#b8552f" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <path d="M46 78h108l-8 56c-2 10-10 14-20 14H74c-10 0-18-4-20-14Z" fill="#b8552f"/>
+        <ellipse cx="100" cy="78" rx="54" ry="11" fill="#96421f"/>
+        <ellipse cx="100" cy="79" rx="47" ry="8" fill="#5a3522"/>
+        <path d="M86 78c6-5 22-5 28 0-6 4-22 4-28 0Z" fill="#c89a6c" opacity=".9"/>
+        <path d="M60 96h80" stroke="#d9a441" stroke-width="3" opacity=".7"/>
+      </svg>
+      <div class="float-card fc-1"><span class="ic">🥐</span><div><b>Doces da casa</b>tortas e mil-folhas</div></div>
+      <div class="float-card fc-2"><span class="ic">🧺</span><div><b>Cestas de café</b>para presentear</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROVA -->
+<div class="proof">
+  <div class="wrap">
+    <div><b>5,0 ★</b><span>nota no Google</span></div>
+    <div><b>300+</b><span>avaliações de clientes</span></div>
+    <div><b>2.700+</b><span>seguidores no Instagram</span></div>
+    <div><b>6 dias</b><span>por semana, desde cedo</span></div>
+  </div>
+</div>
+
+<!-- CARDÁPIO -->
+<section id="cardapio">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">O que servimos</span>
+      <h2 class="section-title">Do primeiro café da manhã ao lanche da tarde</h2>
+      <p class="section-lead">Tudo preparado com carinho, do jeito que nossos clientes elogiam nas avaliações.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="thumb t1"><img class="ph" src="fotos/cafes.png" alt="Cafés especiais do Inverno D'Italia" loading="lazy" onerror="this.remove()">☕<small>foto: cafés</small></div>
+        <div class="card-body">
+          <h3>Cafés especiais</h3>
+          <p>Espresso, capuccino cremoso e café gelado para os dias quentes.</p>
+          <a class="js-whats" data-msg="cafe" href="#">Perguntar sobre os cafés →</a>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="thumb t2"><img class="ph" src="fotos/doces.png" alt="Doces da casa" loading="lazy" onerror="this.remove()">🍰<small>foto: doces</small></div>
+        <div class="card-body">
+          <h3>Doces da casa</h3>
+          <p>Tortas, tortinhas e mil-folhas, os queridinhos de quem passa por aqui.</p>
+          <a class="js-whats" data-msg="doces" href="#">Ver doces do dia →</a>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="thumb t3"><img class="ph" src="fotos/lanches.png" alt="Lanches" loading="lazy" onerror="this.remove()">🥪<small>foto: lanches</small></div>
+        <div class="card-body">
+          <h3>Lanches</h3>
+          <p>Opções saborosas para o café da manhã, o almoço rápido ou o fim de tarde.</p>
+          <a class="js-whats" data-msg="lanches" href="#">Consultar opções →</a>
+        </div>
+      </article>
+      <article class="card reveal">
+        <div class="thumb t4"><img class="ph" src="fotos/bebidas.png" alt="Bebidas geladas" loading="lazy" onerror="this.remove()">🥤<small>foto: bebidas</small></div>
+        <div class="card-body">
+          <h3>Drinks gelados</h3>
+          <p>Bebidas geladas e refrescantes para acompanhar uma boa conversa.</p>
+          <a class="js-whats" data-msg="bebidas" href="#">Saber mais →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ENCOMENDAS -->
+<section class="orders" id="encomendas">
+  <div class="wrap orders-grid">
+    <div class="orders-visual reveal" aria-hidden="true">
+      <img class="ph" src="fotos/cesta.jpg" alt="" loading="lazy" onerror="if(!this.dataset.t){this.dataset.t=1;this.src=this.src.replace(/.jpg$/,'.png')}else{this.remove()}">
+      <span class="tag">Sob encomenda</span>
+      <span class="basket">🧺</span>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Encomendas & presentes</span>
+      <h2 class="section-title">Surpreenda alguém com uma cesta de café</h2>
+      <p class="section-lead">Montamos cestas e doces sob encomenda para datas especiais. Você conta a ocasião e a gente cuida do resto, com o mesmo capricho da nossa vitrine.</p>
+      <ul class="occasions">
+        <li><span>🎂</span>Aniversários</li>
+        <li><span>💍</span>Bodas e casamentos</li>
+        <li><span>👩‍👧</span>Dia das Mães e dos Pais</li>
+        <li><span>🐣</span>Páscoa</li>
+        <li><span>🏢</span>Presentes corporativos</li>
+        <li><span>☀️</span>Café da manhã surpresa</li>
+      </ul>
+      <a class="btn btn-whats js-whats" data-msg="cesta" href="#"><svg><use href="#i-whats"/></svg>Quero encomendar uma cesta</a>
+      <p class="note">Dica: faça o pedido com antecedência para garantir sua data.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMO PEDIR -->
+<section>
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Simples assim</span>
+      <h2 class="section-title">Como fazer sua encomenda</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Chame no WhatsApp</h3><p>Toque no botão verde e a conversa já abre com uma mensagem pronta.</p></div>
+      <div class="step reveal"><h3>Conte a ocasião</h3><p>Diga a data, para quem é e o que tem em mente. A gente sugere as melhores opções.</p></div>
+      <div class="step reveal"><h3>Retire ou receba</h3><p>Combine a retirada na loja, no centro de Alfenas, ou consulte a entrega.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- AMBIENTE -->
+<section style="background:#fff">
+  <div class="wrap ambience-grid">
+    <div class="reveal">
+      <span class="eyebrow">Nosso cantinho</span>
+      <h2 class="section-title">Um lugar para desacelerar</h2>
+      <p class="section-lead">Ambiente acolhedor, atendimento simpático e aquele cheirinho de café no ar. Para ir sozinho, com a família ou com os amigos.</p>
+      <div class="features">
+        <div class="feature"><div class="ic">🛋️</div><div><h3>Ambiente aconchegante</h3><p>O ponto mais citado nas avaliações: um espaço organizado e agradável.</p></div></div>
+        <div class="feature"><div class="ic">📚</div><div><h3>Pensado para as crianças</h3><p>Tem mesinha de leitura para os pequenos enquanto os adultos aproveitam o café.</p></div></div>
+        <div class="feature"><div class="ic">🤝</div><div><h3>Atendimento que encanta</h3><p>Equipe simpática que faz você se sentir em casa desde a primeira visita.</p></div></div>
+        <div class="feature"><div class="ic">🛍️</div><div><h3>Empório</h3><p>Produtos selecionados para levar um pouco do Inverno D'Italia para casa.</p></div></div>
+      </div>
+    </div>
+    <div class="mosaic reveal" aria-hidden="true">
+      <div class="t2"><img class="ph" src="fotos/ambiente-1.jpg" alt="" loading="lazy" onerror="if(!this.dataset.t){this.dataset.t=1;this.src=this.src.replace(/.jpg$/,'.png')}else{this.remove()}">🍂<small>foto: salão</small></div>
+      <div class="t1"><img class="ph" src="fotos/ambiente-2.jpg" alt="" loading="lazy" onerror="if(!this.dataset.t){this.dataset.t=1;this.src=this.src.replace(/.jpg$/,'.png')}else{this.remove()}">☕<small>foto: balcão</small></div>
+      <div class="t3"><img class="ph" src="fotos/ambiente-3.jpg" alt="" loading="lazy" onerror="if(!this.dataset.t){this.dataset.t=1;this.src=this.src.replace(/.jpg$/,'.png')}else{this.remove()}">📖<small>foto: cantinho</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- AVALIAÇÕES -->
+<section class="reviews" id="avaliacoes">
+  <div class="wrap">
+    <div class="reviews-head reveal">
+      <div>
+        <span class="eyebrow" style="color:var(--gold)">Quem vem, recomenda</span>
+        <h2 class="section-title">Nota máxima de quem já provou</h2>
+        <p class="section-lead">Mais de 300 clientes deram 5 estrelas no Google.</p>
+      </div>
+      <div class="score">
+        <b>5,0</b>
+        <div><span class="stars" aria-label="5 estrelas">★★★★★</span><small>303 avaliações no Google</small></div>
+      </div>
+    </div>
+    <div class="quotes">
+      <figure class="quote reveal">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p>“Ambiente acolhedor, tortas deliciosas, drinks gelados refrescantes.”</p>
+        <cite>Avaliação no Google</cite>
+      </figure>
+      <figure class="quote reveal">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p>“As pessoas são super simpáticas, a comida e o café gelado uma delícia!”</p>
+        <cite>Avaliação no Google</cite>
+      </figure>
+      <figure class="quote reveal">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <p>“Ótimo lugar e atendimento, comida muito saborosa e ótimos preços e variedades!”</p>
+        <cite>Avaliação no Google</cite>
+      </figure>
+    </div>
+    <div class="tags reveal" aria-label="Temas mais citados nas avaliações">
+      <span>ambiente</span><span>torta</span><span>capuccino</span><span>simpático</span><span>atendimento</span><span>aconchegante</span>
+    </div>
+  </div>
+</section>
+
+<!-- VISITE -->
+<section id="visite">
+  <div class="wrap">
+    <div class="center reveal" style="margin-bottom:44px">
+      <span class="eyebrow">Venha nos visitar</span>
+      <h2 class="section-title">No coração de Alfenas</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="info reveal">
+        <h3>Inverno D'Italia</h3>
+        <div class="info-row"><svg><use href="#i-pin"/></svg><div><b>Endereço</b><a href="https://www.google.com/maps/search/?api=1&query=Inverno+D'+Italia+Alfenas" target="_blank" rel="noopener">R. Pres. Artur Bernardes, 622 – Centro<br>Alfenas – MG, 37130-093</a></div></div>
+        <div class="info-row"><svg><use href="#i-clock"/></svg><div style="flex:1"><b>Horário</b>
+          <table class="hours">
+            <tr><td>Segunda a sexta</td><td>7h30 – 18h</td></tr>
+            <tr><td>Sábado</td><td>8h – 17h30</td></tr>
+            <tr><td>Domingo</td><td>Fechado</td></tr>
+          </table>
+          <span class="open-status" id="open-status" hidden></span>
+        </div></div>
+        <div class="info-row"><svg><use href="#i-phone"/></svg><div><b>Telefone / WhatsApp</b><a href="tel:+5535999271921">(35) 99927-1921</a></div></div>
+        <div class="info-row"><svg><use href="#i-insta"/></svg><div><b>Instagram</b><a href="https://www.instagram.com/invernoditaliaalfenas/" target="_blank" rel="noopener">@invernoditaliaalfenas</a></div></div>
+        <a class="btn btn-outline" href="https://www.google.com/maps/dir/?api=1&destination=Inverno+D'+Italia+Alfenas" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>Traçar rota</a>
+      </div>
+      <div class="map reveal">
+        <iframe title="Mapa: Inverno D'Italia Alfenas" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Inverno%20D'%20Italia%20Alfenas%2C%20R.%20Pres.%20Artur%20Bernardes%2C%20622%20Alfenas%20MG&z=16&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2 class="section-title">Antes de você vir</h2>
+    </div>
+    <div class="faq-list">
+      <details class="reveal"><summary>Vocês fazem encomendas?</summary><p>Sim! Cestas de café, doces e tortas sob encomenda. Chame no WhatsApp contando a data e a ocasião que a gente te ajuda a montar o pedido.</p></details>
+      <details class="reveal"><summary>Com quanta antecedência devo encomendar?</summary><p>Quanto antes, melhor, principalmente em datas comemorativas como Páscoa e Dia das Mães. Confirme a disponibilidade pelo WhatsApp.</p></details>
+      <details class="reveal"><summary>Qual o horário de funcionamento?</summary><p>De segunda a sexta, das 7h30 às 18h. Aos sábados, das 8h às 17h30. Domingo fechado.</p></details>
+      <details class="reveal"><summary>Posso levar crianças?</summary><p>Claro! O ambiente é familiar e tem até uma mesinha de leitura para os pequenos.</p></details>
+      <details class="reveal"><summary>Onde vocês ficam?</summary><p>Na Rua Presidente Artur Bernardes, 622, no centro de Alfenas (MG).</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final">
+  <div class="wrap reveal">
+    <h2>Seu próximo café favorito está a um clique.</h2>
+    <p>Encomende uma cesta, reserve seus doces ou só venha dar um oi. A gente te espera!</p>
+    <a class="btn btn-whats js-whats" data-msg="encomenda" href="#"><svg><use href="#i-whats"/></svg>Falar no WhatsApp agora</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-brand">
+      <img src="logo.png" alt="Logo Inverno D'Italia" onerror="this.remove()">
+      <div><strong style="color:#fff;font-family:'Fraunces',serif;font-size:1.1rem">Inverno D'Italia Alfenas</strong><br>R. Pres. Artur Bernardes, 622 – Centro, Alfenas – MG</div>
+    </div>
+    <div><a href="https://www.instagram.com/invernoditaliaalfenas/" target="_blank" rel="noopener">Instagram</a> · <a href="tel:+5535999271921">(35) 99927-1921</a></div>
+    <div>© <span id="year"></span> Inverno D'Italia. Todos os direitos reservados. · Desenvolvido por <strong>Mesquita SaaS</strong></div>
+  </div>
+</footer>
+
+<a class="float-whats js-whats" data-msg="geral" href="#" aria-label="Chamar no WhatsApp"><svg><use href="#i-whats"/></svg></a>
+<div class="mobile-bar">
+  <a class="btn btn-outline" href="https://www.google.com/maps/dir/?api=1&destination=Inverno+D'+Italia+Alfenas" target="_blank" rel="noopener" aria-label="Traçar rota"><svg><use href="#i-pin"/></svg></a>
+  <a class="btn btn-whats js-whats" data-msg="encomenda" href="#"><svg><use href="#i-whats"/></svg>Pedir pelo WhatsApp</a>
+</div>
+
+<script>
+  // WhatsApp com mensagens prontas por intenção
+  const PHONE = '5535999271921';
+  const MSGS = {
+    geral:     'Olá! Vi o site do Inverno D\'Italia e gostaria de mais informações.',
+    encomenda: 'Olá! Vi o site do Inverno D\'Italia e gostaria de fazer uma encomenda.',
+    cesta:     'Olá! Quero encomendar uma cesta de café. Pode me passar as opções e valores?',
+    cafe:      'Olá! Quais cafés especiais vocês têm hoje?',
+    doces:     'Olá! Quais doces e tortas vocês têm disponíveis hoje?',
+    lanches:   'Olá! Quais opções de lanche vocês têm?',
+    bebidas:   'Olá! Quais bebidas geladas vocês estão servindo?'
+  };
+  document.querySelectorAll('.js-whats').forEach(a => {
+    const msg = MSGS[a.dataset.msg] || MSGS.geral;
+    a.href = `https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`;
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+
+  // Aberto / fechado agora (horário de Brasília)
+  (function(){
+    const now = new Date(new Date().toLocaleString('en-US', {timeZone: 'America/Sao_Paulo'}));
+    const d = now.getDay(), m = now.getHours() * 60 + now.getMinutes();
+    const ranges = {1:[450,1080],2:[450,1080],3:[450,1080],4:[450,1080],5:[450,1080],6:[480,1050]};
+    const r = ranges[d];
+    const open = r && m >= r[0] && m < r[1];
+    const el = document.getElementById('open-status');
+    el.hidden = false;
+    el.className = 'open-status ' + (open ? 'on' : 'off');
+    el.textContent = open ? '● Aberto agora' : '● Fechado agora';
+    const hs = document.getElementById('hero-status');
+    if (open) hs.textContent = `Aberto agora · fecha às ${d === 6 ? '17h30' : '18h'}`;
+  })();
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Topo muda ao rolar
+  const bar = document.getElementById('topbar');
+  const onScroll = () => bar.classList.toggle('scrolled', window.scrollY > 40);
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive: true});
+
+  // Animação de entrada
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold: .12});
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+  }
+</script>
+</body>
+</html>
